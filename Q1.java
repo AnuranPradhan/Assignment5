@@ -24,7 +24,7 @@ public class Q1 {
 		float marks=sc.nextFloat();
 			return new Node(redg,marks);
 	}
-	public static Node insertbeg(Node start,Node end) {
+	public static Node  InsBeg(Node start,Node end) {
 
 		Node node =create();
 		if(start==null) {
@@ -38,7 +38,7 @@ public class Q1 {
 		}
 		return start;
 	}
-	public static Node insertend(Node start,Node end) {
+	public static Node InsEnd(Node start,Node end) {
 		Node node =create();
 	if(start==null){
 		start=end=node;
@@ -63,11 +63,11 @@ public class Q1 {
 		System.out.println("null");
 		
 	}
-	public static Node insertany(Node start,Node end) {
+	public static Node InsAny(Node start,Node end) {
 		System.out.println("Enter the position");
 		int position=sc.nextInt();
 		if(position==1) {
-			return insertbeg(start,end);
+			return  InsBeg(start,end);
 		}else {
 			Node node =create();
 			Node temp=start;
@@ -93,7 +93,7 @@ public class Q1 {
 		
 		return start;
 	}
-	public static Node deletefirst(Node start,Node end) {
+	public static Node  DelBeg(Node start,Node end) {
 		if(start==null) {
 			System.out.println("List is empty");
 			return null;
@@ -104,7 +104,7 @@ public class Q1 {
 		start.prev=null;
 		return start;
 	}
-	public static  Node deletelast(Node start,Node end) {
+	public static  Node DelEnd(Node start,Node end) {
 		if(end==null) {
 			System.out.println("List is empty");
 			return null;
@@ -115,14 +115,14 @@ public class Q1 {
 		end.next=null;
 		return end;
 	}
-	public static Node deleteany(Node start,Node end) {
+	public static Node  DelAny(Node start,Node end) {
 		if(start==null) {
 			System.out.println("List is empty");
 		}else {
 			System.out.println("Enter the position");
 			int position=sc.nextInt();
 			if(position==1) {
-				return deletefirst(start,end);
+				return  DelBeg(start,end);
 			}else {
 				Node temp=start;
 				for(int i=1;i<position-1;i++) {
@@ -144,7 +144,7 @@ public class Q1 {
 		}
 		return start;
 	}
-	public static void search(Node start) {
+	public static void search(Node start,Node end) {
 		System.out.println("Enter the redg number:");
 		int redg=sc.nextInt();
 		Node temp=start;
