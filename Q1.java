@@ -116,9 +116,6 @@ public class Q1 {
 		return end;
 	}
 	public static Node  DelAny(Node start,Node end) {
-		if(start==null) {
-			System.out.println("List is empty");
-		}else {
 			System.out.println("Enter the position");
 			int position=sc.nextInt();
 			if(position==1) {
