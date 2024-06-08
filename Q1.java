@@ -57,7 +57,7 @@ public class Q1 {
 		}
 		Node node =start;
 		while(node!=null) {
-			System.out.print(node.redg+"->");
+			System.out.print("Redg no:"+node.redg+" marks:"+node.marks+" ->");
 			node=node.next;
 		}
 		System.out.println("null");
