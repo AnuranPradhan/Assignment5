@@ -138,7 +138,6 @@ public class Q1 {
 					System.out.println("invalid position");
 				}
 			}
-		}
 		return start;
 	}
 	public static void search(Node start,Node end) {
